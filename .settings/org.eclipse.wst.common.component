@@ -4,9 +4,8 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/controller"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/model"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/config"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/interceptor"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/util"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/handler"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/aop"/>
         <property name="java-output-path" value="/WX_WALL/WebRoot/WEB-INF/classes"/>
         <property name="context-root" value="WX_WALL"/>
     </wb-module>
