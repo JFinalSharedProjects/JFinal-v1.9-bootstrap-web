@@ -6,6 +6,7 @@ import com.jfinal.config.Interceptors;
 import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
+import com.jfinal.plugin.ehcache.EhCachePlugin;
 import com.jfinal.render.ViewType;
 
 public class Config extends JFinalConfig {
@@ -21,6 +22,8 @@ public class Config extends JFinalConfig {
     }
 
     public void configPlugin(Plugins me) {
+		// C3p0Plugin c3p0Plugin = new C3p0Plugin(getProperty("jdbcUrl"), getProperty("user"), getProperty("password").trim());
+		// me.add(c3p0Plugin);
     }
 
     public void configInterceptor(Interceptors me) {
@@ -28,6 +31,6 @@ public class Config extends JFinalConfig {
     }
 
     public void configHandler(Handlers me) {
-    	me.add(new UrlSkipHandler());
+    	me.add(new DemoHandler());
     }
 }
